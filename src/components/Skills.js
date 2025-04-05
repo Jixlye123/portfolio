@@ -39,16 +39,44 @@ export const Skills = () => {
                             <p>Here are some of the technologies I've worked with.</p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
+                                    <img src={meter3} alt="Image" />
+                                    <h5>Golang</h5>
+                                </div>
+                                <div className="item">
                                     <img src={meter1} alt="Image" />
-                                    <h5>Web Development</h5>
+                                    <h5>React.js</h5>
                                 </div>
                                 <div className="item">
                                     <img src={meter2} alt="Image" />
-                                    <h5>Game Development</h5>
+                                    <h5>Python</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meter1} alt="Image" />
+                                    <h5>Node.js</h5>
                                 </div>
                                 <div className="item">
                                     <img src={meter3} alt="Image" />
-                                    <h5>UI/UX Designing</h5>
+                                    <h5>MySQL</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meter1} alt="Image" />
+                                    <h5>Java</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meter1} alt="Image" />
+                                    <h5>NextJS</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meter2} alt="Image" />
+                                    <h5>Kubernetes</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meter2} alt="Image" />
+                                    <h5>Docker</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={meter2} alt="Image" />
+                                    <h5>AWS</h5>
                                 </div>
                             </Carousel>
                         </div>

@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Alert, Col, Row } from "react-bootstrap";
-export const Newsletter = ({subscribe, status, message}) => {
+export const Newsletter = ({status, message, onValidated}) => {
 
     const [email, setEmail] = useState("");
 
@@ -12,7 +12,7 @@ export const Newsletter = ({subscribe, status, message}) => {
         e.preventDefault();
         email &&
         email.indexOf("@") > -1 &&
-        onValidated9({
+        onValidated({
             EMAIL: email
         })
     }
@@ -23,7 +23,7 @@ export const Newsletter = ({subscribe, status, message}) => {
 
     return (
         <Col lg={12}>
-            <div className="newsletter-bx">
+            <div className="newsletter-bx wow slideInUp">
                 <Row>
                     <Col lg={12} md={6} xl={5}>
                         <h3>Subscribe to my newsletter</h3>
@@ -33,7 +33,7 @@ export const Newsletter = ({subscribe, status, message}) => {
                         {status === "success" && <Alert variant="success">{message}</Alert>}
                     </Col>
                     <Col md={6} xl={7}>
-                        <form onSubmit={subscribe}>
+                        <form onSubmit={handleSubmit}>
                             <div className="new-email-bx">
                                 <input value={status === "success" ? "" : status === "error" ? "" : email} type="email" placeholder="Email Address" onChange={(e) => setEmail(e.target.value)}/>
                                 <button type="submit">Subscribe</button>

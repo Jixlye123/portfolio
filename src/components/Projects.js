@@ -3,45 +3,48 @@ import { Nav,Col, Row } from "react-bootstrap";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
+import projImg4 from "../assets/img/project-img4.png";
+import projImg5 from "../assets/img/project-img5.png";
+import projImg6 from "../assets/img/project-img6.png";
 import { ProjectCards } from "./ProjectCards";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 
 export const Projects = () => {
     const projects = [
         {
-          title: "Business Startup",
-          description: "Design & Development",
+          title: "DigFinesSL",
+          description: "A Full Stack Web Application, made as a solution for the digitalization of fines for the public sector",
           imgUrl: projImg1,
         },
         {
-          title: "Business Startup",
-          description: "Design & Development",
+          title: "Mov++ - Movie recommendation system",
+          description: "Movie recommendation + search system",
           imgUrl: projImg2,
         },
         {
-          title: "Business Startup",
-          description: "Design & Development",
+          title: "Spotify Clone",
+          description: "Single Page Application, made as a UI/UX clone of Spotify",
           imgUrl: projImg3,
         },
         {
-          title: "Business Startup",
-          description: "Design & Development",
-          imgUrl: projImg1,
+          title: "LeadBot AI Chatbot",
+          description: "A ai chatbot that built using chatgpt-j-64b API",
+          imgUrl: projImg4,
         },
         {
-          title: "Business Startup",
-          description: "Design & Development",
-          imgUrl: projImg2,
+          title: "BookFinder System",
+          description: "A Full Stack Web Application, made as a solution for the digitalization of books",
+          imgUrl: projImg5,
         },
         {
-          title: "Business Startup",
-          description: "Design & Development",
-          imgUrl: projImg3,
+          title: "Trading Bot - Using Python",
+          description: "Simple trading bot using python",
+          imgUrl: projImg6,
         },
       ];
 
       return (
-        <section className="project" id="project">
+        <section className="project" id="projects">
             <Container>
                 <Row>
                     <Col>
