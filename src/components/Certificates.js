@@ -36,11 +36,6 @@ export const Certificates = () => {
           description: "A Full Stack Web Application, made as a solution for the digitalization of books",
           imgUrl: certImg5,
         },
-        {
-          title: "LeetCode Solves",
-          description: "A passionate problem solver",
-          imgUrl: projImg6,
-        },
       ];
 
       return (
