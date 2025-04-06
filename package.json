@@ -51,6 +51,5 @@
     "@testing-library/react": "^16.3.0",
     "gh-pages": "^6.3.0",
     "jest": "^27.5.1"
-  },
-  "homepage": "https://Jixlye123.github.io/portfolio/"
+  }
 }
