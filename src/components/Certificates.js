@@ -4,7 +4,7 @@ import certImg1 from "../assets/img/cert-img1.png";
 import certImg2 from "../assets/img/cert-img2.png";
 import certImg3 from "../assets/img/cert-img3.png";
 import certImg4 from "../assets/img/cert-img4.png";
-import projImg5 from "../assets/img/project-img5.png";
+import certImg5 from "../assets/img/cert-img5.png";
 import projImg6 from "../assets/img/project-img6.png";
 import { CertificateCards } from "./CertificateCards";
 import colorSharp2 from "../assets/img/color-sharp2.png";
@@ -34,11 +34,11 @@ export const Certificates = () => {
         {
           title: "Harvard CS50x Cerification",
           description: "A Full Stack Web Application, made as a solution for the digitalization of books",
-          imgUrl: projImg5,
+          imgUrl: certImg5,
         },
         {
-          title: "Trading Bot - Using Python",
-          description: "Simple trading bot using python",
+          title: "LeetCode Solves",
+          description: "A passionate problem solver",
           imgUrl: projImg6,
         },
       ];
@@ -64,7 +64,7 @@ export const Certificates = () => {
                         </Nav>
                         <Tab.Content>
                             <Tab.Pane eventKey="first">
-                            <Row>
+                            <Row className="justify-content-center">
                                 {
                                     certificates.map((certificate, index) => {
                                         return (
