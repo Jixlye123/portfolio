@@ -5,7 +5,7 @@ import certImg2 from "../assets/img/cert-img2.png";
 import certImg3 from "../assets/img/cert-img3.png";
 import certImg4 from "../assets/img/cert-img4.png";
 import certImg5 from "../assets/img/cert-img5.png";
-import projImg6 from "../assets/img/project-img6.png";
+import certImg6 from "../assets/img/cert-img6.png";
 import { CertificateCards } from "./CertificateCards";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 
@@ -20,6 +20,11 @@ export const Certificates = () => {
           title: "Microsoft Mini Game Certification",
           description: "Achieved this by creating a simple mini game using c# and unity",
           imgUrl: certImg2,
+        },
+        {
+          title: "Microsoft AI Skills Fest Certifcate ",
+          description: "Achieved this by Microsoft AI Skills Fest 2025",
+          imgUrl: certImg6,
         },
         {
           title: "FCC Front End Development Certification",
