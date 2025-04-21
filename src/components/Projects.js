@@ -5,9 +5,10 @@ import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import projImg4 from "../assets/img/project-img4.png";
 import projImg5 from "../assets/img/project-img5.png";
-import projImg6 from "../assets/img/project-img6.png";
+import projImg6 from "../assets/img/project-img6.jpg";
 import { ProjectCards } from "./ProjectCards";
 import colorSharp2 from "../assets/img/color-sharp2.png";
+
 
 export const Projects = () => {
     const projects = [
@@ -15,31 +16,37 @@ export const Projects = () => {
           title: "DigFinesSL",
           description: "A Full Stack Web Application, made as a solution for the digitalization of fines for the public sector",
           imgUrl: projImg1,
+          repoUrl: "https://github.com/Jixlye123/RegistrationNext",
         },
         {
           title: "Mov++ - Movie recommendation system",
           description: "Movie recommendation + search system",
           imgUrl: projImg2,
+          repoUrl: "https://github.com/Jixlye123/Randoli",
         },
         {
-          title: "Spotify Clone",
-          description: "Single Page Application, made as a UI/UX clone of Spotify",
+          title: "ex Bank System",
+          description: "A secure and simple bank system, with seamless trasactions",
           imgUrl: projImg3,
+          repoUrl: "https://github.com/Jixlye123/Bank-App",
         },
         {
           title: "LeadBot AI Chatbot",
           description: "A ai chatbot that built using chatgpt-j-64b API",
           imgUrl: projImg4,
+          repoUrl: "https://github.com/Jixlye123/aiChat",
         },
         {
           title: "BookFinder System",
           description: "A Full Stack Web Application, made as a solution for the digitalization of books",
           imgUrl: projImg5,
+          repoUrl: "https://github.com/Jixlye123/Randoli",
         },
         {
-          title: "Trading Bot - Using Python",
-          description: "Simple trading bot using python",
+          title: "UEFA Championship Predictor - Using Python",
+          description: "Simple machine learning prediction model",
           imgUrl: projImg6,
+          repoUrl: "https://github.com/Jixlye123/uefaPredictor",
         },
       ];
 
@@ -70,7 +77,10 @@ export const Projects = () => {
                                         return (
                                             <ProjectCards
                                             key={index}
-                                            {...project}
+                                            title={project.title}
+                                            description={project.description}
+                                            imgUrl={project.imgUrl}
+                                            repoUrl={project.repoUrl}
                                             />
                                         )
                                     })
